@@ -22,7 +22,7 @@ import { IUser } from "./interface";
 
 const TableComponent: FC = () => {
   const [page, setPage] = useState<number>(0);
-  const [rowsPerPage, setRowsPerPage] = useState<number>(5);
+  const [rowsPerPage] = useState<number>(5);
   const [users, setUsers] = useState<Array<IUser>>([]);
   const [loading, setLoading] = useState<Boolean>(false);
   const [searchVal, setSearchVal] = useState<string>("");
